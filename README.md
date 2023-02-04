@@ -1,0 +1,2 @@
+# SimpleCalculator
+Recommended compiler : gcc
