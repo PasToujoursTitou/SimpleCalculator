@@ -20,25 +20,23 @@ int main()
 		printf("Enter second value :\n");
 		scanf("%lf", &second_value);
 		calcul(&operation, &first_value, &second_value, &result);
-		if(operation == 1)
+		switch(operation)
 		{
-		printf("Result of %f additioned with %f equal %f \n", first_value, second_value, result);
-		}
-		else if(operation == 2)
-		{
-			printf("Result of %f substracted with %f equal %f \n", first_value, second_value, result);
-		}
-		else if(operation == 3)
-		{
-			printf("Result of %f multiplied with %f equal %f \n", first_value, second_value, result);
-		}
-		else if(operation == 4)
-		{
-			printf("Result of %f divided with %f equal %f \n", first_value, second_value, result);	
-		}
-		else
-		{
-			printf("Error: try again!\n");
+			case 1:
+				printf("Result of %f additioned with %f equal %f \n", first_value, second_value, result);
+				break;
+			case 2:
+				("Result of %f additioned with %f equal %f \n", first_value, second_value, result);	
+				break;
+			case 3:
+				printf("Result of %f multiplied with %f equal %f \n", first_value, second_value, result);
+				break
+			case 4:
+				printf("Result of %f divided with %f equal %f \n", first_value, second_value, result);	
+				break;
+			default:
+				printf("Error: try again!\n");
+				break;
 		}
 		while(input_loop == 1)
 		{	
